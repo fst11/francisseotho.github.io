@@ -20,7 +20,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: lightcyan;
+        background-color: rgb(232, 224, 255);
     }
 
     /* set the header styles */
@@ -35,7 +35,7 @@
     .logo{
         font-size: 45px;
         font-weight: 700;
-        color: lightseagreen;
+        color: rgb(16, 9, 214);
     }
 
     /* set the navigation styles */
@@ -49,12 +49,12 @@
     }
 
     nav ul li a{
-        color: teal;
+        color: rgb(48, 87, 228);
         text-decoration: none;
     }
 
     nav ul li:hover a{
-        color:#fdbd31;
+        color:#31fd34;
         transition: 0.3s;
     }
 
@@ -98,11 +98,11 @@
 
     /* set the rounded image */
     .rounded-image {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin: 0px 5px 0px 5px;
-        border: 5px solid white;
+        border: 5px solid black;
     }
 
     /* set the profile text (targets span tags within <p> tags in profilecontainer class) */
@@ -125,9 +125,9 @@
     .linkcontainer a{
         padding: 10px 20px;
         font-size: 16px;
-        background: teal;
-        color: white;
-        border: 2px solid #fff;
+        background: rgb(128, 0, 111);
+        color: rgb(255, 255, 255);
+        border: 2px solid #ffffff;
         border-radius: 10px;
         margin-right: 5px;
         cursor: pointer;
@@ -156,7 +156,7 @@
 <body>
 
     <div class="header">
-        <div class="logo">Project: Francis</div>
+        <div class="logo">Introduction</div>
 
         <nav>
             <ul>
@@ -200,9 +200,9 @@
     <script>
 
     var options = {
-        strings: ['I&apos;m Francis!', 'Welcome to my Special Portfolio!'],
-        typeSpeed: 100,
-        backSpeed:100,
+        strings: ['I&apos;m Francis!'],
+        typeSpeed: 200,
+        backSpeed:200,
         loop: false
     };
     var typed = new Typed('.typing', options);
