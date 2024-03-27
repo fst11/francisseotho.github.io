@@ -199,7 +199,7 @@
         text-indent: -9999px;
     }
 /* Set the project cards' scope style */
-.projectcard .scope{
+    .projectcard .scope{
         text-transform: uppercase;
         padding-top: 8px;
         padding-bottom: 8px;
@@ -232,28 +232,82 @@
         white-space: nowrap;
     }
 
-/*style to link in project cards /*
-.projectcard a{
-    text-declaration: none;
-    colour: brown;
-    transform;
-}
+    /*style to link in project cards */
+
+    .projectcard a{
+        text-decoration: none;
+        color: brown;
+        transform: scale(1.0);
+    }
+
     /* ***************************** */
     /* End of styling projectsection */
 
+    /* start of contact section style */
+
+    #contactsection {
+        width: 80%;
+        margin: auto;
+        height: 100dvh;
+    }
+
+    /* end of contact section style */
+
+    /* start of contact container */
+
+    .contactcontainer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: normal;
+            padding: 20px;
+            border-radius: 20px;
+            /* border: 2px solid rgb(31, 178, 170, 0.3); */
+    }
+
+    label{
+        display: block;
+    }
+
+    input[type=name], input[type=email], textarea[type=text]{
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            width: 400px;
+            font-size: medium;
+            color: lightseagreen;
+            border: 1px solid lightseagreen;
+            border-radius: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            text-decoration: none;
+    }
+
+    /* end of contact container */
+
     /* start of styling misc elements */
+
     .top{
     display:flex;
     justify-content: center;
     align-content: center;}
 
-.top a{text-decoration: none;
-font-size: small;
-color: black;
-margin-top: 20px;
-}
+    .top a{text-decoration: none;
+    font-size: small;
+    color: black;
+    margin-top: 20px;
+    }
+
+    .divider{
+        margin: auto;
+        width: 70%;
+        height: 1em;
+        border-top: 1px dashed;
+        color: #3131fd;
+    } 
+
     /* ***************************** */
-    /* End of styling projectsection */
+    /* End of styling misc elements */
 
 
    
@@ -409,6 +463,48 @@ margin-top: 20px;
   </section>
   <!-- End of projectsection -->
 
+    <!-- start of divider -->
+        <div class="divider">
+        <!-- place holder to do a divider -->
+        </div>
+    <!-- end of divider -->
+
+    <!-- start of contact -->
+    <section id="contactsection">
+    <div class="sectiontitle">Connect with us</div>
+    <div class="contactcontainer">
+            <form>
+            <div>
+                <!-- input for user name -->
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="e.g. Joe DOCTYPE">
+            </div>
+            <div>
+                <!-- user contact -->
+                <label for="email">Email Address</label>
+                <input type="text" id="email" placeholder="exa@example.com">
+            </div>
+            <div>
+                <!-- user message -->
+                <label for="message">Message</label>
+                <textarea name="description" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <!-- submit button -->
+                <button type="submit">Submit</button>
+            </div>
+            <div>
+                <!-- reset button -->
+                <button type="reset">reset</button>
+            </div>
+
+            </form>
+
+        <div class="top">
+            <a href="#top">&#x25B2; Back to Top</a>
+        </div>
+        </div>
+    <!-- end of contact  -->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
