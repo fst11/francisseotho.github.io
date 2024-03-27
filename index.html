@@ -123,7 +123,7 @@
     }
 
     /* set the <a> tags' styles */
-    .linkcontainer a{
+    button[type=submit],.linkcontainer a{
         padding: 10px 20px;
         font-size: 16px;
         background: rgb(128, 0, 111);
@@ -263,17 +263,17 @@
             align-items: normal;
             padding: 20px;
             border-radius: 20px;
-            /* border: 2px solid rgb(31, 178, 170, 0.3); */
+            border: 2px solid rgb(31, 178, 170, 0.3);
     }
 
     label{
         display: block;
     }
 
-    input[type=name], input[type=email], textarea[type=text]{
+    input[type=text], input[type=email], textarea{
             padding: 10px 20px;
             margin-bottom: 20px;
-            width: 400px;
+            width: 90%;
             font-size: medium;
             color: lightseagreen;
             border: 1px solid lightseagreen;
@@ -305,6 +305,17 @@
         border-top: 1px dashed;
         color: #3131fd;
     } 
+
+    button[type=reset]{
+        padding: 10px 20px;
+        font-size: 16px;
+        background: rgb(128, 0, 111);
+        color: rgb(12, 231, 231);
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        text-decoration: none;}
 
     /* ***************************** */
     /* End of styling misc elements */
@@ -492,8 +503,6 @@
             <div>
                 <!-- submit button -->
                 <button type="submit">Submit</button>
-            </div>
-            <div>
                 <!-- reset button -->
                 <button type="reset">reset</button>
             </div>
@@ -504,6 +513,7 @@
             <a href="#top">&#x25B2; Back to Top</a>
         </div>
         </div>
+    </section>
     <!-- end of contact  -->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
